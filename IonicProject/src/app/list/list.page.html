@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor = "let item of items"> 
+    <img [src]="item.thumbnailUrl"/>
+    <ion-card-content>
+      <ion-card-title>
+       {{item.title}}
+      </ion-card-title>
+    </ion-card-content>
+  </ion-card>
+</ion-content> 

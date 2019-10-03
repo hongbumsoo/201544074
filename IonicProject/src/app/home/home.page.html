@@ -1,0 +1,29 @@
+<ion-header center text-center>
+  <ion-toolbar>
+    <ion-title>영화리뷰</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding center text-center>
+  <ion-list>
+    <ion-item>
+      <ion-input placeholder="Username" [(ngModel)]="username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="password" type="Password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button size="full" shape="round" (click)="login()">로그인</ion-button>
+  <ion-button size="full" shape="round" color="light" (click)="goTodo()">회원가입</ion-button>
+  <ion-button size="full" shape="round" color="light" (click)="presentActionSheet()">영화목록</ion-button>
+  <ion-button size="full" shape="round" color="light" (click)="goMain()">메인화면</ion-button>
+
+  <!--<ion-toggle [(ngModel)]="pepperoni" (ionChange)="change()"></ion-toggle>
+  <h1 *ngIf="pepperoni">hide password : {{password}}</h1>
+  <!-<ion-button (click)="postData()">Post Data</ion-button>
+  <ion-button (click)="getData()">Get Data</ion-button>
+  <ion-row>Body: {{result.body}}</ion-row>
+  <ion-row>ID: {{result.id}}</ion-row>
+  <ion-row>Title: {{result.title}}</ion-row>-->
+</ion-content>
